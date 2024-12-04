@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>home</title>
+</head>
+<body>
+    <header>
+        <h4 style="text-align: center;">Hotel</h4>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Specials">Specials</a></li>
+            <li>Menu</li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <section class="content">
+            <div class="container-1"  id="Home">
+                <h3 style="text-align: center; font-size: 32px;"><i>Welcome to Hotel</i></h3>
+
+                <div class="container-2">
+                   <a href="Order.html" class="btn-1"><b>Order Now</b></a>
+                </div>
+            </div> 
+    </section>
+    <hr>
+<section class="Specials" id="Specials">
+    <div class="container-3">
+                <h1 style="text-align: center;"><i>Specials</i></h1>
+                
+        <div class="dish">
+                <div>
+                    <img src="images/Vegetable-Kurma-1.jpg" alt="Veg Kurma">
+                    <h4 style="text-align: center;">Veg Kurma</h4>
+                </div>
+                <div>
+                    <img src="images/vegkop.jpg" alt="Veg Kolhapuri">
+                    <h4 style="text-align: center;">Veg Kolhapuri</h4>
+                </div>
+                <div>
+                    <img src="images/veg-biryani-vegetable-biryani.webp" alt="Veg Biryani">
+                    <h4 style="text-align: center;">Veg Biryani</h4>
+                </div>
+                <div class="menubtn">
+                    <a href="javascript:void(0);" class="btn-1" onclick="toggleMenu()"><b>Food-Menu</b></a>
+                </div>
+    
+                <table id="menu" style="display: none;">
+                    <tr>
+                        <td>Chana Masala</td>
+                        <td>250&#8377;</td>
+                        <td><img src="images/chana masala.jpg" width="50" height="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Veg Biryani</td>
+                        <td>300&#8377;</td>
+                        <td><img src="images/veg-biryani-vegetable-biryani.webp" width="50" height="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Veg Kolhapuri</td>
+                        <td>280&#8377;</td>
+                        <td><img src="images/vegkop.jpg" width="50" height="50"></td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+</section>
+    
+        <hr>
+    
+        <footer>
+            <h3 style="text-align: center; font-size: 22px;">Thanks for visiting</h3>
+        </footer>
+    
+        <script>
+    
+            function toggleMenu() {
+                var menuTable = document.getElementById('menu');
+                if (menuTable.style.display === 'none' || menuTable.style.display === '') {
+                    menuTable.style.display = 'block';  
+                } else {
+                    menuTable.style.display = 'none'; 
+                }
+            }
+        </script>
+    
+</body>
+</html>
